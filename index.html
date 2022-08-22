@@ -1,15 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Dinosaur Game</title>
-</head>
-<body>
-  
-</body>
-<script src="scripts.js"></script>
+<html lang="en" onclick="jump()">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dinosaur Game</title>
+  </head>
 
+  <body class="flex flex-col items-center p-9">
+    <div id="game" class="w-[500px] h-[200px] border-[1px] border-black">
+      <div
+        id="character"
+        class="w-[20px] h-[50px] bg-red-500 relative top-[148px]"
+      ></div>
+      <div
+        id="block"
+        class="w-[20px] h-[20px] bg-blue-500 relative top-[128px] left-[478px]"
+      ></div>
+    </div>
+  </body>
+
+  <script src="scripts.js"></script>
 </html>
